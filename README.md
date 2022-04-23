@@ -41,9 +41,6 @@ The following **additional** features are implemented:
 
 If you recorded multiple GIFs for all the implemented features, you can add them here:
 ![](http://g.recordit.co/YICVoVhA6f.gif)
-![](gif2-link-here)
-![](gif3-link-here)
-![](gif4-link-here)
 
 ## Reflection Questions
 1. If you used any outside resources to help complete your submission (websites, books, people, etc) list them here. 
@@ -70,5 +67,5 @@ If i had a few more hours I would have worked on debugging my timer. Additionall
 
 ## Interview Recording URL Link
 
-[My 5-minute Interview Recording](your-link-here)
+[My 5-minute Interview Recording](https://www.loom.com/share/eca9791d8eb5433fb1a9f38178494a4c)
 
