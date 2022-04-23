@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="https://glitch.com/favicon.ico" />
+
+    <title>Hello world!</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    <!-- this is the start of content -->
+    <h1>Light and Sound Memory Game</h1>
+    <p>
+      Welcome! Pick a setting and press start to play a pattern. Repeat back 
+      the pattern by pressing the buttons. Complete 8 consecutive
+      rounds to win!
+    </p>
+
+    <div id="timeOptions">
+      <label id="label1"><input type="radio" name="option" id="Option 1" onclick="start1()">Untimed</label>
+      <label id="label2"><input type="radio" name="option" id="Option 2" onclick="start2()">Timed (10s)</label>
+      <label id="label3"><input type="radio" name="option" id="Option 3" onclick="start3()">Timed (5s)</label>
+      <label id="label4"><input type="radio" name="option" id="Option 4" onclick="start4()">Timed (2s)</label>
+    </div>
+    
+    <br>
+    <button id="startBtn" class="hidden" onclick="startGame()">Start</button> 
+    <button id="stopBtn" class="hidden" onclick="stopGame()">Stop</button>
+
+    <div id="gameButtonArea">
+      <button
+        id="button1"
+        onmousedown="startTone(1)"
+        onmouseup="stopTone()"
+        onclick="guess(1)"
+      ></button>
+      <button
+        id="button2"
+        onmousedown="startTone(2)"
+        onmouseup="stopTone()"
+        onclick="guess(2)"
+      ></button>
+      <button
+        id="button3"
+        onmousedown="startTone(3)"
+        onmouseup="stopTone()"
+        onclick="guess(3)"
+      ></button>
+      <button
+        id="button4"
+        onmousedown="startTone(4)"
+        onmouseup="stopTone()"
+        onclick="guess(4)"
+      ></button>
+    </div>
+    <p id="timeDisplay"></p>
+  </body>
+</html>
